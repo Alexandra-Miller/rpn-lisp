@@ -1,0 +1,133 @@
+=== MATH FUNCTIONS =============================================================
+
++   add
+    usage: a b +
+    (adds 'a' to 'b')
+
+-   subtract
+    usage: a b -
+    (subtracts 'a' from 'b')
+
+*   multiply
+    usage: a b *
+    (multiplies 'a' by 'b')
+
+/   divide
+    usage: a b /
+    (divides 'a' by 'b')
+
+**  exponentiate
+    usage a b **
+    (raises a to the power of b)
+
+//  root
+    usage a b //
+    (returns b root of a) 
+
+=== BOOL =========================================================================
+
+>   greater
+    usage: a b >
+    (returns true if 'a' is greater than 'b')
+
+<   lesser
+    usage: a b <
+    (returns true if 'a' is lesser than 'b')
+
+=   equal
+    usage: a b =
+    (returns true if 'a' equals 'b')
+
+v   or
+    usage: a b v
+    (returns true if a or b are true)
+
+^   and
+    usage: a b ^
+    (returns true if a and b are true)
+
+~   not
+    usage: a ~
+    (returns the logical inverse of a)
+
+~v  nor
+    usage: a b ~v
+
+~^  nand
+    usage: a b ~^
+    (returns true if either a or b are false)
+
+
+T   true
+
+F   false
+
+
+=== EVALUATION =================================================================
+
+|   evaluate
+    usage: args fun |
+    (list 'fun' is evaluated as code)
+
+
+|?  evaluate_if
+    usage: lst cond |?
+    (evaluates 'lst' if 'cond' is true)
+
+
+=== LIST MANIPULATION ==========================================================
+
+=<  bind
+    usage: lst str =<
+    (adds pointer to lst to symbol table with str as the key)
+
+==  concatenate
+    usage: lst1 lst2 ==
+    (concatenates 'lst1' and 'lst2')
+
+.=  head
+    usage: lst .=
+    (gets he head value of the 'lst')
+
+=.  tail
+    usage: lst =.
+    (gets the tail of 'lst')
+
++=  insert
+    usage: a idx lst +=
+    (inserts a at 'idx' in 'lst')
+    
+x=  delete
+    usage: idx lst x=
+    (deletes the element stored at 'idx' form 'lst')
+    
+->  move
+    usage: idx0 idx1 lst ->
+    (moves the element stored in 'lst' at 'idx0' to 'idx1')
+
+=]  reverse
+    usage: lst =}
+    (returns list with elements reversed)
+
+=s  size
+    usage: lst =s
+    (returns the number of elements in lst)
+
+=== INTERRUPTS ================================================================
+    
+<<  stdout
+    usage: str <<
+    (sends str to stdout)
+
+>>  stdin
+    usage: >>
+    (halts program and sends user input to top of stack)
+
+||  stop
+    usage: num ||
+    (halts program until 'num' seconds have elaspsed)
+
+x|  exit
+    usage: num EXT
+    (exits program and prints 'num' to screen unless 'num' is 0)
+

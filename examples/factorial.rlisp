@@ -1,0 +1,6 @@
+
+( 1 = factorial |? 1 * ) factorial =<
+
+( >> "exit" = x| |? factorial loop | ) loop =<
+
+loop |
